@@ -1,16 +1,26 @@
-import { Grommet } from "grommet";
+import { Button, CheckBox, Text } from "grommet";
+import Choose from "./theme/choose";
+import AllColors from "./components/allColors";
 
 function App() {
   return (
-    <Grommet>
-      <h1 className="text-4xl">hello world</h1>
-      <div className="text">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sequi
-        molestiae architecto laudantium incidunt animi sit fugiat praesentium
-        natus impedit odio officiis adipisci neque voluptatibus quam,
-        accusantium, consectetur pariatur amet!
+    <>
+      <div className="text-8xl pt-40 font-semibold">
+        Generate Color Theme with Google Material Theme
       </div>
-    </Grommet>
+      <Text size="small">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe aut
+        aliquam inventore omnis eius doloribus quaerat asperiores impedit velit
+        dolores rerum quas, neque quae veritatis architecto quia iure incidunt
+        expedita.
+      </Text>
+      <br />
+      <br />
+      <Button label="Generate Theme" primary color="primary" />
+      <CheckBox color="primary" label="Dark Theme" />
+      <AllColors />
+      <Choose />
+    </>
   );
 }
 
