@@ -11,7 +11,7 @@ function AllColors() {
   if (!colors) return null;
   return (
     <>
-      <h1 className="text-4xl">All Colors</h1>
+      <h1 className="text-4xl py-5">All Colors</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 pb-40">
         {Object.entries(colors).map(([name, color]) => {
           if (typeof color === "undefined") return null;
